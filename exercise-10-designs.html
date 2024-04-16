@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          scroll-behavior: smooth;
+          /* border: 0.5px dotted green; */
+          color: rgb(0, 0, 0);
+        }
+        
+        html {
+          font-size: 62.5%;
+        }
+        
+        ul,
+        ol {
+          list-style: none;
+        }
+        
+        a {
+          text-decoration: none;
+        }
+        
+        body {
+            font-size: 1.6rem;
+            overflow-wrap: break-word;
+            text-wrap: pretty;
+            hyphens: auto;
+            font-family: "Merriweather", serif;
+            line-height: 1.5;
+            background-color: #777475;
+        }
+        
+        /* wrap all of the content inside the body to a div with a class of "site" */
+        .site {
+            min-height: 100dvh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        header nav ul {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1em;
+            margin-left: 1em;
+        }
+
+        header nav ul a{
+            transition: all 333ms ease;
+        }
+
+        header nav ul a:hover{
+            color: rgb(202, 191, 30);
+            font-size: 1.1em;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: .001em solid #000000;
+            max-width: 99%;
+            margin: 1em auto;
+        }
+
+        section {
+            margin-left: 1em;
+        }
+
+        section h1{
+            margin-bottom: .5em;
+        }
+
+        .design-images{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="site">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/18rd_qOAmSUFfXPYqrjXK7B5Tvu1HNxkN">Home</a></li>|
+                    <li><a href="">Exercises</a></li>|
+                    <li><a href="https://drive.google.com/drive/folders/1r4kWn8Q15SslTi9ayQ3frnPwk4UgQUK7">Designs</a></li>|
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <section>
+                <h1>My Designs</h1>
+                    <section class="design-images">
+                        <picture>
+                            <!-- <img src="https://drive.google.com/file/d/1p7ubQuRPe29ugdHZK3gTl-v2D-Dbc5uV/view?usp=drive_link" alt="image"> -->
+                            <img src="banner.jpg" alt="image">
+                        </picture>
+                        <picture>
+                            <!-- <img src="https://drive.google.com/file/d/1dn1JUih8zaaaZRfqHA5CNY4g_9YofKk-/view?usp=drive_link" alt="image"> -->
+                            <img src="banner.gif" alt="image">
+                        </picture>
+                    </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
