@@ -5,21 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="contacthtml.css">
   <title>Contact Me</title>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #FFBD00;
+    }
+    .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #FFBD00; /* Container color yellow */
+    }
+    .form {
+        text-align: center;
+        background-color: beige; /* Form background color */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form form {
+        max-width: 400px;
+    }
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .description {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    input[type="text"] {
+        width: calc(100% - 70px);
+        padding: 10px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button[type="submit"] {
+        width: 70px;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: steelblue;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <div class="main-content">
     <div class="form">
       <form class="form">
-        <span class="title">Contact Me.</span>
-        <p class="description">Get in Touch with me By sending me an E-mail najerazekie@gmail.com</p>
+        <span class="title">Contact Me</span>
+        <p class="description">Get in Touch with me By sending me an E-mail at najerazekie@gmail.com</p>
         <div>
-          <input placeholder="Enter your message" type="text" name="email" id="email-address">
+          <input placeholder="Enter your message here" type="text" name="email" id="email-address">
           <button type="submit">Send</button>
         </div>
       </form>
     </div>
   </div>
-  
- 
 </body>
 </html>
